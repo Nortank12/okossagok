@@ -3,9 +3,12 @@ Ez lényegében Windows és Linux scriptek gyűjteménye, valamint van benne pá
 
 Ahogy fejlődünk és újabb programokat vagy parancsokat ismerünk meg, az bekerül ide is.
 
-# Tartalomjegyzék
+## Scriptek
 - ### [Windows](/Windows)
     - [Win10 aktiváló](/Windows/Win10%20aktiváló)
 - ### [Linux](/Linux)
-    - [Docker / Docker Compose](/Linux/Docker)
-- A többi hamarosan...
+    - [még nincs...](/Linux/README.md)
+
+## Útmutatók
+- [Docker](/Útmutatók/Docker.md)
+- [Docker Compose](/Útmutatók/Compose.md)
