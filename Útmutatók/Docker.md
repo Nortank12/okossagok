@@ -56,3 +56,11 @@ Ctrl + P + Q                                # Kilépés a terminálból
 Ctrl + A + D                                # Kilépés és container leállítása
 docker rm [container_név]                   # Container törlése (rm -f kényszeríti)
 ```
+## Bejelentkezés `ghcr.io` könyvtárba
+```bash
+docker login --username [név] --password [token] ghcr.io
+```
+vagy
+```bash
+docker login --username [név] --password-stdin ghcr.io < token.txt
+```
