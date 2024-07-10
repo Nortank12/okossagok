@@ -7,7 +7,8 @@ Ahogy fejlődünk és újabb programokat vagy parancsokat ismerünk meg, az beke
 - ### [Windows](/Windows)
     - [Win10 aktiváló](/Windows/Win10%20aktiváló)
 - ### [Linux](/Linux)
-    - [még nincs...](/Linux/README.md)
+    - [Debian 12 (KDE)](/Linux/Debian%2012%20(KDE))
+    - [Gentoo (KDE)](/Linux/Gentoo%20(KDE))
 
 ## Útmutatók
 - [Docker](/Útmutatók/Docker.md)
