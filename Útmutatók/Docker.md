@@ -12,7 +12,8 @@ docker images                               # Image-ek listázása
 docker pull [image_név]                     # Image letöltése vagy frissítése Docker Hubról
 docker build -t [image_név] [mappanév]      # Buildelés Dockerfileból
 docker rmi [image_név]                      # Image törlése
-docker image prune                          # Nem használt image-ek törlése
+docker image prune                          # Nem használt image hash-ek törlése
+docker image prune -a                       # Összes image törlése, ami nincs containerhez csatolva
 docker commit [container_név] [image_név]   # Image létrehozása containerből
 ```
 
