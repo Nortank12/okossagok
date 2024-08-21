@@ -49,7 +49,7 @@ echo "root:$ROOT_PW" | chpasswd
 useradd -mG audio,cdrom,floppy,portage,usb,video,wheel -s /bin/bash $USER
 echo "$USER:$USER_PW" | chpasswd
 
-# 13. Szükséges csomagok rissítése
+# 13. Szükséges csomagok frissítése
 emerge -quDN @world
 emerge --depclean
 
