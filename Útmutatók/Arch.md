@@ -7,7 +7,7 @@ Hogyha először telepítesz Arch Linuxot, érdemes átolvasni az [ArchWiki](htt
 ### Telepítő
 Töltsd le a telepítő ISO fájlt [innen](https://archlinux.org/download/), majd bootold be róla a számítógépet.
 
-## Előkészület
+## 1. Előkészület
 ### Billentyűkiosztás átállítása
 ```bash
 loadkeys hu
@@ -19,7 +19,7 @@ iwctl -P [JELSZÓ] station [ESZKÖZ] connect [SSID]
 ```
 [**iwctl** dokumentáció](https://man.archlinux.org/man/extra/iwd/iwctl.1.en)
 
-## Partícionálás
+## 2. Partícionálás
 Ez háttértártól függő, jelenlegi példában az eszköz neve `/dev/sda`.
 
 <table>
@@ -72,7 +72,7 @@ mkswap /dev/sda2
 mkfs.ext4 /dev/sda3
 ```
 
-## Partíciók felcsatolása
+## 3. Partíciók felcsatolása
 A meglévő partíciókat ellenőrizheted az `lsblk` paranccsal.
 
 ### Arch root
@@ -89,7 +89,7 @@ swapon /dev/sda2
 ```
 *A swap felcsatolása `genfstab`-bal való beállításhoz szükséges.*
 
-## Alaprendszer telepítése
+## 4. Alaprendszer telepítése
 ### Keyring frissítése
 ```bash
 pacman -Syy archlinux-keyring --needed
@@ -99,13 +99,14 @@ pacman -Syy archlinux-keyring --needed
 pacstrap -K /mnt base
 ```
 
-## Csatlakozás a rendszerre
+## 5. Szükséges csomagok telepítése / beállítások elvégzése
+### Csatlakozás a telepített rendszerre
 ```bash
 arch-chroot /mnt
 ```
 
-## Szükséges csomagok telepítése / beállítások elvégzése
-Ezeket a lépéseket egy bash scripttel automatizáltuk, amit hamarosan feltöltünk ide is.
+### Telepítőszkript futtatása
+A beállítás folyamatát egy `bash script`-tel automatizáltuk, amit hamarosan feltöltünk ide is.
 
 ...
 
@@ -114,7 +115,7 @@ Ezeket a lépéseket egy bash scripttel automatizáltuk, amit hamarosan feltölt
 exit
 ```
 
-## Rendszerindítás beállítása
+## 6. Rendszerindítás beállítása
 ### Boot entry megadása
 ```bash
 efibootmgr -c -d /dev/sda -p 1 -L "Arch Linux" -l \vmlinuz-linux -u "root=/dev/sda3 rw initrd=/intel-ucode.img initrd=/initramfs-linux.img"
@@ -139,7 +140,7 @@ Fájl tartalma:
 /dev/sda3               /               ext4            defaults        0 1
 ```
 
-## Újraindítás
+## 7. Újraindítás
 A sikeres telepítés után indítsd újra a rendszert és válaszd le a telepítőt tartalmazó meghajtót.
 ```bash
 reboot
