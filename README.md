@@ -12,7 +12,8 @@ Ahogy fejlődünk és újabb programokat vagy parancsokat ismerünk meg, az beke
 
 ## Útmutatók
 - ### Docker
-    - [Docker](/Útmutatók/Docker.md)
-    - [Docker Compose](/Útmutatók/Compose.md)
-- ### Linux
-    - [Arch Linux manuális telepítés](/Útmutatók/Arch.md)
+    - [Docker](/Útmutatók/Docker/Docker.md)
+    - [Docker Compose](/Útmutatók/Docker/Compose.md)
+- ### Arch Linux
+    - [Arch Linux manuális telepítés](/Útmutatók/Arch%20Linux/Arch.md)
+    - [Animált töltőképernyő (Splash Screen)](/Útmutatók/Arch%20Linux/Töltőképernyő/README.md)
