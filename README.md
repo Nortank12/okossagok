@@ -17,3 +17,6 @@ Ahogy fejlődünk és újabb programokat vagy parancsokat ismerünk meg, az beke
 - ### Arch Linux
     - [Arch Linux manuális telepítés](/Útmutatók/Arch%20Linux/Arch.md)
     - [Animált töltőképernyő (Splash Screen)](/Útmutatók/Arch%20Linux/Töltőképernyő/README.md)
+- ### yt-dlp
+    - [yt-dlp telepítés és használat](/Útmutatók/yt-dlp/yt-dlp.md)
+    - [FFmpeg telepítés](/Útmutatók/yt-dlp/FFmpeg.md)
