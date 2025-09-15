@@ -20,3 +20,5 @@ Ahogy fejlődünk és újabb programokat vagy parancsokat ismerünk meg, az beke
 - ### yt-dlp
     - [yt-dlp telepítés és használat](/Útmutatók/yt-dlp/yt-dlp.md)
     - [FFmpeg telepítés](/Útmutatók/yt-dlp/FFmpeg.md)
+- ### mobilnet
+    - [Korlátlan mobilinternet belföldön és Roamingban](/Útmutatók/mobilnet/yettel-mobilnet.md)
