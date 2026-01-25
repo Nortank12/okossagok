@@ -5,7 +5,9 @@ Ahogy fejlődünk és újabb programokat vagy parancsokat ismerünk meg, az beke
 
 ## Scriptek
 - ### [Windows](/Windows)
-    - [Win10 aktiváló](/Windows/Win10%20aktiváló)
+    - [Aktiválás](/Windows/Aktiválás.md)
+    - [Office + aktiválás](/Windows/Office.md)
+    - [Optimalizálás](/Windows/Debloat.md)
 - ### [Linux](/Linux)
     - [Debian 12 (KDE)](/Linux/Debian%2012%20(KDE))
     - [Gentoo (KDE)](/Linux/Gentoo%20(KDE))
